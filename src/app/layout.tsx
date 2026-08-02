@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Fraunces, Space_Grotesk, Geist_Mono } from "next/font/google";
+import Nav from "@/components/Nav";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body className={`${fraunces.variable} ${spaceGrotesk.variable} ${geistMono.variable} antialiased`}>
+      <Nav />
       {children}
     </body>
     </html>
